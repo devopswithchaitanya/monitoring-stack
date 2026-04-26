@@ -72,3 +72,11 @@ services:
       - "9100:9100"
     networks:
       - monitoring
+
+  nodejs-app:
+    build: ./app
+    container_name: nodejs-app
+    ports:
+      - "3001:3001"
+    networks:
+      - monitoring
